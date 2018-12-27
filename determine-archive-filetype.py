@@ -17,13 +17,13 @@ else:
 
 COMMON_MAGIC_BYTES = {
     "\x89\x50\x4e\x47\x0d\x0a\x1a\x0a": "png",
-    "\x7b\x5c\x72\x74\x66\x31": "rich text format",
-    "\x4c\x5a\x49\x50": "lzip",
+    "\x7b\x5c\x72\x74\x66\x31": "rtf",
+    "\x4c\x5a\x49\x50": "lz",
     "\x37\x7a\xbc\xaf\x27\x1c": "7z",
     "\xfd\x37\x7a\x58\x5a\x00": "xz",
     "\x1f\x8b\x08": "gz",
     "\x42\x5a\x68": "bz2",
-    "\x50\x4b\x03\x04": "zip",  # + formats based on zip e.g. pptx/xlsx/docx
+    "\x50\x4b\x03\x04": "zip",
 }
 
 MAX_LENGTH = max(len(x) for x in COMMON_MAGIC_BYTES)
@@ -81,7 +81,10 @@ def main():
     """print current directory and filetype for each file"""
     print("directory: {}".format(os.path.dirname(os.path.realpath(__file__))))
     for _file in os.listdir(os.getcwd()):
-        print("file: {}, type: {}".format(_file, get_file_type(_file)))
+        try:
+            print("file: {}, type: {}".format(_file, get_file_type(_file)))
+        except IsADirectoryError:
+            pass
 
 
 if __name__ == "__main__":
