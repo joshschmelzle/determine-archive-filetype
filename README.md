@@ -2,6 +2,8 @@
 
 determine an archive's filetype using common magic bytes (file signatures)
 
+this is an alternative to using python-magic, and libmagic
+
 # included magic bytes (file signatures) 
 
 | signature | extension | description |
@@ -17,7 +19,7 @@ determine an archive's filetype using common magic bytes (file signatures)
 
 # requirements
 
-Python v3.0+ because [unicode](https://nedbatchelder.com/text/unipain.html) is [~~hard~~](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/).
+Python v3.0+ because [unicode](https://nedbatchelder.com/text/unipain.html) is [~~hard~~](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 
 # status
 
@@ -43,4 +45,4 @@ file: tar-zcvf.tar.gz, type: gz
 
 # license
 
-project license can be found [here](https://github.com/joshschmelzle/determine-archive-filetype/blob/master/LICENSE).
+project license can be found [here](https://github.com/joshschmelzle/determine-archive-filetype/blob/master/LICENSE)
