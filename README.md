@@ -19,7 +19,7 @@ this is an alternative to using python-magic, and libmagic
 
 # requirements
 
-Python v3.0+ because [unicode](https://nedbatchelder.com/text/unipain.html) is [~~hard~~](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+Python v3.2+ because [unicode](https://nedbatchelder.com/text/unipain.html) is [~~hard~~](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 
 # status
 
