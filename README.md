@@ -2,7 +2,7 @@
 
 determine an archive's filetype using common magic bytes (file signatures)
 
-this is an alternative to using python-magic, and libmagic
+this is a very crude alternative to using python-magic, and libmagic that i used for learning purposes
 
 # included magic bytes (file signatures) 
 
