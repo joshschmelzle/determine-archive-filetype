@@ -1,4 +1,4 @@
-# determine archive filetype
+# determine archive filetype (not suitable to actual use)
 
 determine an archive's filetype using common magic bytes (file signatures)
 
