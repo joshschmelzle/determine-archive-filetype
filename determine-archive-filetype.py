@@ -10,9 +10,7 @@ import sys
 import argparse
 import textwrap
 
-if sys.version_info > (3, 2):
-    pass
-else:
+if sys.version_info < (3, 2):
     print("python v3.2+ required")
     sys.exit(-1)
 
