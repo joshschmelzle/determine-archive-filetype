@@ -1,4 +1,4 @@
-# determine archive filetype (NOT SUITABLE FOR ACTUAL USE / EDUCATIONAL ONLY)
+# determine archive filetype (NOT SUITABLE FOR ACTUAL USE / THIS IS EDUCATIONAL ONLY)
 
 determine an archive's filetype using common magic bytes (file signatures)
 
